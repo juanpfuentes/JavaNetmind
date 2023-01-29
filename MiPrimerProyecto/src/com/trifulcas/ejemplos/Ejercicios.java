@@ -3,29 +3,29 @@ package com.trifulcas.ejemplos;
 public class Ejercicios {
 
 	public static void main(String[] args) {
-		String[] cadenas= {"No subas, abusón","Yo dono rosas, oro no doy","No traces en ese cartón"};
+		String[] cadenas= {"No subas, abusÃ³n","Yo dono rosas, oro no doy","No traces en ese cartï¿½n"};
 		System.out.println(esPalindromo("Viva la paella"));
 		System.out.println(esPalindromo("Sara Baras"));
-		System.out.println(esPalindromo("Isaac no ronca así"));
+		System.out.println(esPalindromo("Isaac no ronca asï¿½"));
 		for(String cadena:cadenas) {
 			System.out.println(esPalindromo(cadena));
 		}
 		System.out.println("Con clase");
-		Palindromo pal=new Palindromo("Dábale arroz a la zorra el abad");
+		Palindromo pal=new Palindromo("Dï¿½bale arroz a la zorra el abad");
 		System.out.println(pal.esPalindromo());
 	}
 
-	// Una cadena es palíndromo si es igual a ella misma invertida
+	// Una cadena es palï¿½ndromo si es igual a ella misma invertida
 	public static boolean esPalindromo(String cadena) {
 		cadena = normalizar(cadena);
 		StringBuilder foo = new StringBuilder(cadena);
 		return cadena.equals(foo.reverse().toString());
 	}
 	
-	// He creado una función normalizar para otros caracteres
+	// He creado una funciï¿½n normalizar para otros caracteres
 	public static String normalizar(String cadena) {
-		return cadena.toLowerCase().replace("á", "a").replace("é", "e").replace("í", "i").replace("ó", "o")
-				.replace("ú", "u").replace("ü","u").replace(" ", "").replace(".", "").replace(",", "");
+		return cadena.toLowerCase().replace("ï¿½", "a").replace("ï¿½", "e").replace("ï¿½", "i").replace("ï¿½", "o")
+				.replace("ï¿½", "u").replace("ï¿½","u").replace(" ", "").replace(".", "").replace(",", "");
 	}
 	
 	// La estructura if (condicion) return true else return false es igual a:

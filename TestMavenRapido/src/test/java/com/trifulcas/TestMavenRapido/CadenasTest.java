@@ -12,6 +12,7 @@ public class CadenasTest {
 	public void testEsPalindromo() {
 		assertEquals(true,cadenas.esPalindromo("Sara Baras"));
 		assertEquals(false,cadenas.esPalindromo("Hola"));
+		
 	}
 
 	@Test
